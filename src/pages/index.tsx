@@ -1,11 +1,12 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import AdditionalPricing from "./components/Sections/AdditionalPricing";
-import FAQ from "./components/Sections/FAQ";
-import Features from "./components/Sections/Features";
+import AdditionalPricing from "../components/Sections/AdditionalPricing";
+import FAQ from "../components/Sections/FAQ";
+import Features from "../components/Sections/Features";
 
-import Hero from "./components/Sections/Hero";
-import Pricing from "./components/Sections/Pricing";
+import Hero from "../components/Sections/Hero";
+import Pricing from "../components/Sections/Pricing";
+import Footer from "../components/UI/Footer";
 
 const Home: NextPage = () => {
 
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
         <Pricing />
         <AdditionalPricing />
         <FAQ />
+        <Footer />
       </main>
     </>
   );
