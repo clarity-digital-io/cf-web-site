@@ -6,6 +6,7 @@ import Features from "../components/Sections/Features";
 
 import Hero from "../components/Sections/Hero";
 import Pricing from "../components/Sections/Pricing";
+import Product from "../components/Sections/Product";
 import Footer from "../components/UI/Footer";
 
 const Home: NextPage = () => {
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
       </Head>
       <main className="min-h-screen">
         <Hero />
+        <Product />
         <Features />
         <Pricing />
         <AdditionalPricing />

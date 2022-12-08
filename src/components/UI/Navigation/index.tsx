@@ -1,12 +1,14 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Link from 'next/link'
+import ClarityFormsLogo from '../Icons/ClarityFormsLogo'
 
 const navigation = [
-  { name: 'Product', href: '#' },
+  { name: 'Salesforce Native', href: '#' },
   { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'View on AppExchange', href: '#' },
+  { name: 'Pricing', href: '#' },
 ]
 
 export default function Navigation() {
@@ -18,14 +20,10 @@ export default function Navigation() {
       >
         <div className="flex flex-1 items-center">
           <div className="flex w-full items-center justify-between md:w-auto">
-            <a href="#">
+            <Link href="/">
               <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto sm:h-10"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
-            </a>
+              <ClarityFormsLogo />
+            </Link>
             <div className="-mr-2 flex items-center md:hidden">
               <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                 <span className="sr-only">Open main menu</span>
@@ -40,16 +38,6 @@ export default function Navigation() {
               </a>
             ))}
           </div>
-        </div>
-        <div className="hidden text-right md:block">
-          <span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
-            <a
-              href="#"
-              className="inline-flex items-center rounded-md border border-transparent bg-white px-4 py-2 text-base font-medium text-indigo-600 hover:bg-gray-50"
-            >
-              Log in
-            </a>
-          </span>
         </div>
       </nav>
 
@@ -69,11 +57,9 @@ export default function Navigation() {
           <div className="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
             <div className="flex items-center justify-between px-5 pt-4">
               <div>
-                <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
-                />
+
+                <ClarityFormsLogo />
+
               </div>
               <div className="-mr-2">
                 <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -93,12 +79,6 @@ export default function Navigation() {
                 </a>
               ))}
             </div>
-            <a
-              href="#"
-              className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100"
-            >
-              Log in
-            </a>
           </div>
         </Popover.Panel>
       </Transition>

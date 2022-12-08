@@ -30,26 +30,11 @@ const tiers = [
       'Donec mauris sit in eu tincidunt etiam.',
       'Faucibus volutpat magna.',
     ],
-  },
-  {
-    name: 'Enterprise',
-    href: '#',
-    priceMonthly: 48,
-    description: 'All the basics for starting a new business',
-    features: [
-      'Potenti felis, in cras at at ligula nunc. ',
-      'Orci neque eget pellentesque.',
-      'Donec mauris sit in eu tincidunt etiam.',
-      'Faucibus volutpat magna.',
-      'Id sed tellus in varius quisque.',
-      'Risus egestas faucibus.',
-      'Risus cursus ullamcorper.',
-    ],
-  },
+  }
 ]
 
 export default function Pricing() {
-  return <div className="mx-auto max-w-7xl px-4 pt-24 sm:px-6 lg:px-8">
+  return <div className="mx-auto max-w-7xl px-4 py-32 sm:px-6 lg:px-8 bg-white">
     <div className="sm:align-center sm:flex sm:flex-col">
       <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-center">Pricing Plans</h1>
       <p className="mt-5 text-xl text-gray-500 sm:text-center">
@@ -70,9 +55,9 @@ export default function Pricing() {
         </button>
       </div>
     </div>
-    <div className="mt-12 space-y-4 sm:mt-16 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:mx-auto lg:max-w-4xl xl:mx-0 xl:max-w-none xl:grid-cols-4">
+    <div className="mt-12 space-y-4 sm:mt-16 sm:grid sm:grid-cols-1 sm:gap-6 sm:space-y-0 lg:mx-auto lg:max-w-4xl xl:mx-0 xl:max-w-none xl:grid-cols-3">
       {tiers.map((tier) => (
-        <div key={tier.name} className="divide-y divide-gray-200 rounded-lg border border-gray-200 shadow-sm">
+        <div key={tier.name} className="divide-y divide-gray-200 rounded-lg shadow-sm bg-zinc-100">
           <div className="p-6">
             <h2 className="text-lg font-medium leading-6 text-gray-900">{tier.name}</h2>
             <p className="mt-4 text-sm text-gray-500">{tier.description}</p>
@@ -82,7 +67,7 @@ export default function Pricing() {
             </p>
             <a
               href={tier.href}
-              className="mt-8 block w-full rounded-md border border-transparent bg-purple-600 py-2 text-center text-sm font-semibold text-white hover:bg-purple-700"
+              className="mt-8 block w-full rounded-md border border-transparent bg-gray-600 py-2 text-center text-sm font-semibold text-white hover:bg-gray-700"
             >
               Buy {tier.name}
             </a>
