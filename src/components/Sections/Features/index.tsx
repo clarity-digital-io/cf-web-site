@@ -42,29 +42,29 @@ const features = [
 
 export default function Features() {
   return (
-    <div className="bg-zinc-900">
-      <div className="mx-auto max-w-7xl py-16 px-6 sm:py-18 lg:px-8 lg:py-24">
-        <div className='bg-rose-100 p-16 rounded-md'>
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">Features</h2>
-            <p className="mx-auto mt-4 max-w-xl text-lg leading-8 text-gray-700">
-              Quia est qui aut velit exercitationem repudiandae voluptatem facilis. Neque est debitis dolor facilis ab
-              amet.
-            </p>
-          </div>
-          <dl className="mt-20 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 lg:gap-x-8">
-            {features.map((feature) => (
-              <div key={feature.name} className="relative">
-                <dt>
-                  <CheckIcon className="absolute mt-1 h-6 w-6 text-gray-700" aria-hidden="true" />
-                  <p className="ml-10 text-lg font-semibold leading-8 text-black">{feature.name}</p>
-                </dt>
-                <dd className="mt-2 ml-10 text-base leading-7 text-gray-700">{feature.description}</dd>
-              </div>
-            ))}
-          </dl>
+
+    <div className="mx-auto max-w-7xl py-16 px-6 sm:py-18 lg:px-8 lg:py-24">
+      <div className='bg-yellow-200 p-16 rounded-md'>
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl">Features</h2>
+          <p className="mx-auto mt-4 max-w-xl text-lg leading-8 text-gray-700">
+            Quia est qui aut velit exercitationem repudiandae voluptatem facilis. Neque est debitis dolor facilis ab
+            amet.
+          </p>
         </div>
+        <dl className="mt-20 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 lg:gap-x-8">
+          {features.map((feature) => (
+            <div key={feature.name} className="relative">
+              <dt>
+                <CheckIcon className="absolute mt-1 h-6 w-6 text-gray-700" aria-hidden="true" />
+                <p className="ml-10 text-lg font-semibold leading-8 text-black">{feature.name}</p>
+              </dt>
+              <dd className="mt-2 ml-10 text-base leading-7 text-gray-700">{feature.description}</dd>
+            </div>
+          ))}
+        </dl>
       </div>
     </div>
+
   )
 }

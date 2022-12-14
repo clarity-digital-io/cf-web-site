@@ -9,21 +9,21 @@ import {
 const transferFeatures = [
   {
     id: 1,
-    name: 'Competitive exchange rates',
+    name: 'Offline first functionality',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
     icon: GlobeAltIcon,
   },
   {
     id: 2,
-    name: 'No hidden fees',
+    name: 'Advanced form features',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
     icon: ScaleIcon,
   },
   {
     id: 3,
-    name: 'Transfers are instant',
+    name: 'All data on Salesforce',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
     icon: BoltIcon,
@@ -32,14 +32,21 @@ const transferFeatures = [
 const communicationFeatures = [
   {
     id: 1,
-    name: 'Mobile notifications',
+    name: 'No Code Form Builder',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
     icon: ChatBubbleBottomCenterTextIcon,
   },
   {
     id: 2,
-    name: 'Reminder emails',
+    name: 'Salesforce Native',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+    icon: EnvelopeIcon,
+  },
+  {
+    id: 3,
+    name: 'Salesforce Field Mapping',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
     icon: EnvelopeIcon,
@@ -85,7 +92,7 @@ export default function Mobile() {
 
         <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
           <div className="relative">
-            <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Transfer funds world-wide</h3>
+            <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Mobile offline data collection for enterprise and startups</h3>
             <p className="mt-3 text-lg text-gray-500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
               officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
@@ -96,7 +103,7 @@ export default function Mobile() {
               {transferFeatures.map((item) => (
                 <div key={item.id} className="relative">
                   <dt>
-                    <div className="absolute flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-500 text-white">
+                    <div className="absolute flex h-12 w-12 items-center justify-center rounded-xl bg-gray-800 text-white">
                       <item.icon className="h-8 w-8" aria-hidden="true" />
                     </div>
                     <p className="ml-16 text-lg font-medium leading-6 text-gray-900">{item.name}</p>
@@ -164,7 +171,7 @@ export default function Mobile() {
         <div className="relative mt-12 sm:mt-16 lg:mt-24">
           <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:items-center lg:gap-8">
             <div className="lg:col-start-2">
-              <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Always in the loop</h3>
+              <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Build forms in minutes right inside of Salesforce</h3>
               <p className="mt-3 text-lg text-gray-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus,
                 cum deleniti sunt in labore nihil quod quibusdam expedita nemo.
@@ -174,7 +181,7 @@ export default function Mobile() {
                 {communicationFeatures.map((item) => (
                   <div key={item.id} className="relative">
                     <dt>
-                      <div className="absolute flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-500 text-white">
+                      <div className="absolute flex h-12 w-12 items-center justify-center rounded-xl bg-gray-800 text-white">
                         <item.icon className="h-8 w-8" aria-hidden="true" />
                       </div>
                       <p className="ml-16 text-lg font-medium leading-6 text-gray-900">{item.name}</p>

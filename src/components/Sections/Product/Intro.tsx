@@ -27,7 +27,7 @@ const features = [
 
 export default function Intro() {
   return (
-    <div className="relative bg-white py-14 sm:py-12 lg:py-20">
+    <div className="relative bg-white py-18 sm:py-20 lg:py-18">
       <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-1 lg:grid-cols-3">
           {features.map((feature) => (
@@ -35,7 +35,7 @@ export default function Intro() {
               <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8">
                 <div className="-mt-6">
                   <div>
-                    <span className="inline-flex items-center justify-center rounded-xl bg-indigo-500 p-3 shadow-lg">
+                    <span className="inline-flex items-center justify-center rounded-xl bg-gray-800 p-3 shadow-lg">
                       <feature.icon className="h-8 w-8 text-white" aria-hidden="true" />
                     </span>
                   </div>

@@ -23,14 +23,14 @@ const features = [
 
 export default function QuickOverview() {
   return (
-    <div className="bg-rose-100 py-10 sm:py-14 lg:py-12">
+    <div className="bg-yellow-200 py-18 sm:py-16 lg:py-18">
       <div className="mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-8">
         <h2 className="sr-only">A better way to send money.</h2>
         <dl className="grid grid-cols-1 gap-16 lg:grid lg:grid-cols-3">
           {features.map((feature) => (
             <div key={feature.name}>
               <dt>
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-500 text-white">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gray-800 text-white">
                   <feature.icon className="h-8 w-8" aria-hidden="true" />
                 </div>
                 <p className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">{feature.name}</p>
