@@ -1,7 +1,14 @@
 import { Fragment } from 'react'
 import { CheckIcon, ChevronDownIcon, MinusIcon } from '@heroicons/react/20/solid'
 
-const tiers = [
+type Tier = {
+  name: string,
+  href: string,
+  priceMonthly: number,
+  description: string
+}
+
+const tiers: Tier[] = [
   { name: 'Starter', href: '#', priceMonthly: 10, description: 'Quis suspendisse ut fermentum neque vivamus non tellus.' },
   {
     name: 'Business',
@@ -10,39 +17,47 @@ const tiers = [
     description: 'Quis eleifend a tincidunt pellentesque. A tempor in sed.',
   }
 ]
-const sections = [
+// feature.tiers[tier.name] 
+
+type FeatureInfo = {
+  name: string,
+  tiers: Record<string, boolean | string>
+}
+
+type Section = {
+  name: string,
+  features: FeatureInfo[]
+}
+
+const sections: Section[] = [
   {
     name: 'Features',
     features: [
-      { name: 'Molestie lobortis massa.', tiers: { Basic: true, Essential: true, Premium: true } },
-      { name: 'Urna purus felis.', tiers: { Basic: true, Essential: true, Premium: true } },
-      { name: 'Tellus pulvinar sit dictum.', tiers: { Essential: true, Premium: true } },
-      { name: 'Convallis.', tiers: { Essential: 'Up to 20 users', Premium: 'Up to 50 users' } },
+      { name: 'Molestie lobortis massa.', tiers: { Starter: true, Business: true } },
+      { name: 'Urna purus felis.', tiers: { Starter: true, Business: true } },
+      { name: 'Tellus pulvinar sit dictum.', tiers: { Business: true } },
+      { name: 'Convallis.', tiers: { Starter: 'Up to 20 users', Business: 'Up to 50 users' } },
     ],
   },
   {
     name: 'Reporting',
     features: [
-      { name: 'Adipiscing.', tiers: { Basic: true, Essential: true, Premium: true } },
-      { name: 'Eget risus integer.', tiers: { Essential: true, Premium: true } },
-      { name: 'Gravida leo urna velit.', tiers: { Premium: true } },
-      { name: 'Elementum ut dapibus mi feugiat cras nisl.', tiers: { Premium: true } },
+      { name: 'Adipiscing.', tiers: { Starter: true, Business: true } },
+      { name: 'Eget risus integer.', tiers: { Starter: true, Business: true } },
+      { name: 'Gravida leo urna velit.', tiers: { Business: true } },
+      { name: 'Elementum ut dapibus mi feugiat cras nisl.', tiers: { Business: true } },
     ],
   },
   {
     name: 'Support',
     features: [
-      { name: 'Sit dignissim.', tiers: { Basic: true, Essential: true, Premium: true } },
-      { name: 'Congue at nibh et.', tiers: { Essential: true, Premium: true } },
-      { name: 'Volutpat feugiat mattis.', tiers: { Essential: true, Premium: true } },
-      { name: 'Tristique pellentesque ornare diam sapien.', tiers: { Premium: true } },
+      { name: 'Sit dignissim.', tiers: { Starter: true, Business: true } },
+      { name: 'Congue at nibh et.', tiers: { Business: true } },
+      { name: 'Volutpat feugiat mattis.', tiers: { Business: true } },
+      { name: 'Tristique pellentesque ornare diam sapien.', tiers: { Business: true } },
     ],
   },
 ]
-
-function classNames(...classes: any[]) {
-  return classes.filter(Boolean).join(' ')
-}
 
 export const TablePricing = () => {
 
