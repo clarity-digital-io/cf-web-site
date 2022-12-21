@@ -55,8 +55,8 @@ const communicationFeatures = [
 
 export default function Mobile() {
   return (
-    <div className="overflow-hidden bg-gray-50 py-16 lg:py-24">
-      <div className="relative mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-8">
+    <div className="overflow-hidden bg-white py-24">
+      <div className="relative mx-auto max-w-xl px-6 lg:max-w-6xl lg:px-8">
         <svg
           className="absolute left-full hidden -translate-x-1/2 -translate-y-1/4 transform lg:block"
           width={404}
@@ -74,26 +74,25 @@ export default function Mobile() {
               height={20}
               patternUnits="userSpaceOnUse"
             >
-              <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+              <rect x={0} y={0} width={4} height={4} className="text-zinc-200" fill="currentColor" />
             </pattern>
           </defs>
           <rect width={404} height={784} fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)" />
         </svg>
 
         <div className="relative">
-          <h2 className="text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-            A better way to send money
+          <h2 className="text-center mx-auto max-w-xl text-3xl font-extrabold leading-8 tracking-tight text-zinc-900 sm:text-5xl">
+            User Friendly Salesforce Form Builder
           </h2>
-          <p className="mx-auto mt-4 max-w-3xl text-center text-xl text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in,
-            accusamus quisquam.
+          <p className="mx-auto mt-4 max-w-3xl text-center text-xl text-zinc-500">
+            Build forms in minutes right inside Salesforce.
           </p>
         </div>
 
         <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
           <div className="relative">
-            <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Mobile offline data collection for enterprise and startups</h3>
-            <p className="mt-3 text-lg text-gray-500">
+            <h3 className="text-2xl font-bold tracking-tight text-zinc-900 sm:text-3xl">Eaasy</h3>
+            <p className="mt-3 text-lg text-zinc-500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
               officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
               Totam, velit.
@@ -106,9 +105,9 @@ export default function Mobile() {
                     <div className="absolute flex h-12 w-12 items-center justify-center rounded-xl bg-gray-800 text-white">
                       <item.icon className="h-8 w-8" aria-hidden="true" />
                     </div>
-                    <p className="ml-16 text-lg font-medium leading-6 text-gray-900">{item.name}</p>
+                    <p className="ml-16 text-lg font-medium leading-6 text-zinc-900">{item.name}</p>
                   </dt>
-                  <dd className="mt-2 ml-16 text-base text-gray-500">{item.description}</dd>
+                  <dd className="mt-2 ml-16 text-base text-zinc-500">{item.description}</dd>
                 </div>
               ))}
             </dl>
@@ -131,7 +130,7 @@ export default function Mobile() {
                   height={20}
                   patternUnits="userSpaceOnUse"
                 >
-                  <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+                  <rect x={0} y={0} width={4} height={4} className="text-zinc-200" fill="currentColor" />
                 </pattern>
               </defs>
               <rect width={784} height={404} fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
@@ -162,7 +161,7 @@ export default function Mobile() {
               height={20}
               patternUnits="userSpaceOnUse"
             >
-              <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+              <rect x={0} y={0} width={4} height={4} className="text-zinc-200" fill="currentColor" />
             </pattern>
           </defs>
           <rect width={404} height={784} fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
@@ -171,8 +170,8 @@ export default function Mobile() {
         <div className="relative mt-12 sm:mt-16 lg:mt-24">
           <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:items-center lg:gap-8">
             <div className="lg:col-start-2">
-              <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Build forms in minutes right inside of Salesforce</h3>
-              <p className="mt-3 text-lg text-gray-500">
+              <h3 className="text-2xl font-bold tracking-tight text-zinc-900 sm:text-3xl">Build forms in minutes right inside of Salesforce</h3>
+              <p className="mt-3 text-lg text-zinc-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus,
                 cum deleniti sunt in labore nihil quod quibusdam expedita nemo.
               </p>
@@ -184,9 +183,9 @@ export default function Mobile() {
                       <div className="absolute flex h-12 w-12 items-center justify-center rounded-xl bg-gray-800 text-white">
                         <item.icon className="h-8 w-8" aria-hidden="true" />
                       </div>
-                      <p className="ml-16 text-lg font-medium leading-6 text-gray-900">{item.name}</p>
+                      <p className="ml-16 text-lg font-medium leading-6 text-zinc-900">{item.name}</p>
                     </dt>
-                    <dd className="mt-2 ml-16 text-base text-gray-500">{item.description}</dd>
+                    <dd className="mt-2 ml-16 text-base text-zinc-500">{item.description}</dd>
                   </div>
                 ))}
               </dl>
@@ -210,7 +209,7 @@ export default function Mobile() {
                     height={20}
                     patternUnits="userSpaceOnUse"
                   >
-                    <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+                    <rect x={0} y={0} width={4} height={4} className="text-zinc-200" fill="currentColor" />
                   </pattern>
                 </defs>
                 <rect width={784} height={404} fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />

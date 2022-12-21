@@ -28,7 +28,7 @@ const features = [
 export default function Intro() {
   return (
     <div className="relative bg-white py-18 sm:py-20 lg:py-18">
-      <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-6xl lg:px-8">
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-1 lg:grid-cols-3">
           {features.map((feature) => (
             <div key={feature.name} className="pt-6">
@@ -39,10 +39,10 @@ export default function Intro() {
                       <feature.icon className="h-8 w-8 text-white" aria-hidden="true" />
                     </span>
                   </div>
-                  <h3 className="mt-8 text-lg font-semibold leading-8 tracking-tight text-gray-900">
+                  <h3 className="mt-8 text-lg font-semibold leading-8 tracking-tight text-zinc-900">
                     {feature.name}
                   </h3>
-                  <p className="mt-5 text-base leading-7 text-gray-600">{feature.description}</p>
+                  <p className="mt-5 text-base leading-7 text-zinc-600">{feature.description}</p>
                 </div>
               </div>
             </div>

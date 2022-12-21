@@ -5,7 +5,7 @@ import QuickOverview from './QuickOverview'
 export default function Product() {
   return <>
     <QuickOverview />
-    <Intro />
+    {/* <Intro /> */}
     <Mobile />
   </>
 }

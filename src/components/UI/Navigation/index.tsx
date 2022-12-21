@@ -15,17 +15,17 @@ export default function Navigation() {
   return (
     <Popover>
       <nav
-        className="relative mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6"
+        className="relative mx-auto flex max-w-6xl items-center justify-between px-4 sm:px-6"
         aria-label="Global"
       >
         <div className="flex flex-1 items-center">
           <div className="flex w-full items-center justify-between md:w-auto">
             <Link href="/">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">Clarity Forms</span>
               <ClarityFormsLogo />
             </Link>
             <div className="-mr-2 flex items-center md:hidden">
-              <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+              <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-zinc-400 hover:bg-gray-100 hover:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                 <span className="sr-only">Open main menu</span>
                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
               </Popover.Button>
@@ -33,7 +33,7 @@ export default function Navigation() {
           </div>
           <div className="hidden md:ml-10 md:block md:space-x-10">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900">
+              <a key={item.name} href={item.href} className="text-sm font-semibold text-zinc-800 hover:text-zinc-900">
                 {item.name}
               </a>
             ))}
@@ -62,7 +62,7 @@ export default function Navigation() {
 
               </div>
               <div className="-mr-2">
-                <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-zinc-400 hover:bg-gray-100 hover:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                   <span className="sr-only">Close main menu</span>
                   <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
@@ -73,7 +73,7 @@ export default function Navigation() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
+                  className="block rounded-md px-3 py-2 text-sm font-bold text-zinc-700 hover:bg-gray-50 hover:text-zinc-900"
                 >
                   {item.name}
                 </a>

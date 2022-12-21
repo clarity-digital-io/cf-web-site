@@ -6,6 +6,7 @@ import Features from "../components/Sections/Features";
 
 import Hero from "../components/Sections/Hero";
 import Pricing from "../components/Sections/Pricing";
+import { TablePricing } from "../components/Sections/Pricing/secondary";
 import Product from "../components/Sections/Product";
 import Footer from "../components/UI/Footer";
 
@@ -22,8 +23,7 @@ const Home: NextPage = () => {
         <Hero />
         <Product />
         <Features />
-        <Pricing />
-        <AdditionalPricing />
+        <TablePricing />
         <FAQ />
         <Footer />
       </main>

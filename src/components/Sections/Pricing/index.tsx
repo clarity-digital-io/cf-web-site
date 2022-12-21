@@ -35,10 +35,10 @@ const tiers = [
 
 export default function Pricing() {
   return <div className='bg-zinc-900'>
-    <div className="mx-auto max-w-7xl px-4 py-32 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
       <div className="sm:align-center sm:flex sm:flex-col">
-        <h1 className="text-4xl font-bold tracking-tight text-gray-50 sm:text-center">Pricing Plans</h1>
-        <p className="mt-5 text-xl text-gray-500 sm:text-center">
+        <h1 className="text-4xl font-bold tracking-tight text-zinc-50 sm:text-center">Pricing Plans</h1>
+        <p className="mt-5 text-xl text-zinc-500 sm:text-center">
           Start building for free, then add a site plan to go live. Account plans unlock additional features.
         </p>
       </div>
@@ -46,11 +46,11 @@ export default function Pricing() {
         {tiers.map((tier) => (
           <div key={tier.name} className="divide-y divide-gray-200 rounded-lg shadow-sm bg-zinc-100">
             <div className="p-6">
-              <h2 className="text-lg font-medium leading-6 text-gray-900">{tier.name}</h2>
-              <p className="mt-4 text-sm text-gray-500">{tier.description}</p>
+              <h2 className="text-lg font-medium leading-6 text-zinc-900">{tier.name}</h2>
+              <p className="mt-4 text-sm text-zinc-500">{tier.description}</p>
               <p className="mt-8">
-                <span className="text-4xl font-bold tracking-tight text-gray-900">${tier.priceMonthly}</span>{' '}
-                <span className="text-base font-medium text-gray-500">/mo</span>
+                <span className="text-4xl font-bold tracking-tight text-zinc-900">${tier.priceMonthly}</span>{' '}
+                <span className="text-base font-medium text-zinc-500">/mo</span>
               </p>
               <a
                 href={tier.href}
@@ -64,7 +64,7 @@ export default function Pricing() {
                 {tier.features.map((feature) => (
                   <li key={feature} className="flex space-x-3">
                     <CheckIconMini className="h-5 w-5 flex-shrink-0 text-green-500" aria-hidden="true" />
-                    <span className="text-sm text-gray-500">{feature}</span>
+                    <span className="text-sm text-zinc-500">{feature}</span>
                   </li>
                 ))}
               </ul>

@@ -2,40 +2,40 @@ import { BoltIcon, GlobeAltIcon, ScaleIcon } from '@heroicons/react/24/outline'
 
 const features = [
   {
-    name: 'Competitive exchange rates',
+    name: 'Salesforce Native',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Clarity Forms provides the possibility of a deep integration with all the Salesforce workflow tools.',
     icon: GlobeAltIcon,
   },
   {
-    name: 'No hidden fees',
+    name: 'Field Ready',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Guide your team with our Mobile app, and easily capture the data needed to improve your business.',
     icon: ScaleIcon,
   },
   {
-    name: 'Transfers are instant',
+    name: 'Customizations Available',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Use conditional fields, prefilled fields, guided forms + customize your user\'s Mobile App Experience.',
     icon: BoltIcon,
   },
 ]
 
 export default function QuickOverview() {
   return (
-    <div className="bg-yellow-200 py-18 sm:py-16 lg:py-18">
-      <div className="mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="sr-only">A better way to send money.</h2>
+    <div className="bg-orange-50 py-12 sm:py-24 lg:py-16">
+      <div className="mx-auto max-w-xl px-6 lg:max-w-6xl lg:px-8">
+        <h2 className="sr-only">Salesforce Native Mobile Forms.</h2>
         <dl className="grid grid-cols-1 gap-16 lg:grid lg:grid-cols-3">
           {features.map((feature) => (
             <div key={feature.name}>
               <dt>
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gray-800 text-white">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-800 text-white">
                   <feature.icon className="h-8 w-8" aria-hidden="true" />
                 </div>
-                <p className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">{feature.name}</p>
+                <p className="mt-6 text-sm font-bold leading-8 tracking-tight text-zinc-900">{feature.name}</p>
               </dt>
-              <dd className="mt-2 text-base leading-7 text-gray-600">{feature.description}</dd>
+              <dd className="mt-2 text-sm leading-7 text-zinc-600">{feature.description}</dd>
             </div>
           ))}
         </dl>

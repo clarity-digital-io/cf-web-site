@@ -25,16 +25,16 @@ const tiers = [
 
 export default function AdditionalPricing() {
   return <div className='bg-gray-50'>
-    <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8 ">
+    <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6 lg:px-8 ">
       <div className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:mx-auto lg:max-w-4xl xl:mx-0 xl:max-w-none xl:grid-cols-2">
         {tiers.map((tier) => (
           <div key={tier.name} className={`divide-y divide-gray-200 rounded-lg border border-gray-200 shadow-sm ${tier.bg}`}>
             <div className="p-10">
-              <h2 className="text-lg font-medium leading-6 text-gray-50 w-6">{tier.name}</h2>
+              <h2 className="text-lg font-medium leading-6 text-zinc-50 w-6">{tier.name}</h2>
               <p className="mt-4 text-sm text-white">{tier.description}</p>
               <p className="mt-8">
-                <span className="text-4xl font-bold tracking-tight text-gray-900">${tier.priceMonthly}</span>{' '}
-                <span className="text-base font-medium text-gray-500">/mo</span>
+                <span className="text-4xl font-bold tracking-tight text-zinc-900">${tier.priceMonthly}</span>{' '}
+                <span className="text-base font-medium text-zinc-500">/mo</span>
               </p>
               <a
                 href={tier.href}
@@ -48,7 +48,7 @@ export default function AdditionalPricing() {
                 {tier.features.map((feature) => (
                   <li key={feature} className="flex space-x-3">
                     <CheckIconMini className="h-5 w-5 flex-shrink-0 text-green-500" aria-hidden="true" />
-                    <span className="text-sm text-gray-500">{feature}</span>
+                    <span className="text-sm text-zinc-500">{feature}</span>
                   </li>
                 ))}
               </ul>
