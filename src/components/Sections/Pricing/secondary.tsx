@@ -86,7 +86,7 @@ export const TablePricing = () => {
               </p>
               <p className="mt-4 text-sm text-zinc-600">{tier.description}</p>
               <button
-                className="mt-3 w-full rounded-md border-zinc-800 hover:border-zinc-900 border-transparent px-6 py-3 text-base font-medium text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center"
+                className="mt-3 w-full rounded-md border-2 border-zinc-800 hover:border-orange-400  border-transparent bg-transparent px-6 py-3 text-base font-bold text-zinc-800 hover:text-zinc-900 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
                 Get started
               </button>
@@ -136,7 +136,7 @@ export const TablePricing = () => {
 
             <div className="border-t border-gray-200 px-4 pt-5">
               <button
-                className="mt-3 w-full rounded-md border border-transparent bg-gray-800 hover:bg-gray-900 px-6 py-3 text-base font-medium text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center"
+                className="mt-3 w-full rounded-md border border-transparent bg-gray-800 hover:bg-orange-400 px-6 py-3 text-base font-bold text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
                 Get started
               </button>
@@ -182,7 +182,7 @@ export const TablePricing = () => {
                       <p className="mt-4 text-sm text-zinc-600">{tier.description}</p>
                     </div>
                     <button
-                      className="mt-3 w-full rounded-md border border-transparent bg-gray-800 hover:bg-gray-900 px-6 py-3 text-base font-medium text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center"
+                      className="mt-3 w-full rounded-md border-2 border-zinc-800 hover:border-orange-400  border-transparent bg-transparent px-6 py-3 text-base font-bold text-zinc-800 hover:text-zinc-900 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                     >
                       Get started
                     </button>
@@ -238,7 +238,7 @@ export const TablePricing = () => {
               {tiers.map((tier) => (
                 <td key={tier.name} className="pt-5">
                   <button
-                    className="mt-3 w-full rounded-md border border-transparent bg-gray-800 hover:bg-gray-900 px-6 py-3 text-base font-medium text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center"
+                    className="mt-3 w-full rounded-md border border-transparent bg-gray-800 hover:bg-orange-400 px-6 py-3 text-base font-bold text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center"
                   >
                     Get started
                   </button>
