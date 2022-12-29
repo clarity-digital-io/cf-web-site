@@ -31,30 +31,37 @@ type Section = {
 
 const sections: Section[] = [
   {
-    name: 'Features',
+    name: 'Native Form Builder',
     features: [
-      { name: 'Molestie lobortis massa.', tiers: { Starter: true, Business: true } },
-      { name: 'Urna purus felis.', tiers: { Starter: true, Business: true } },
-      { name: 'Tellus pulvinar sit dictum.', tiers: { Business: true } },
-      { name: 'Convallis.', tiers: { Starter: 'Up to 20 users', Business: 'Up to 50 users' } },
+      { name: '100% Salesforce Native', tiers: { Starter: true, Business: true } },
+      { name: 'Drag and Drop Builder', tiers: { Starter: true, Business: true } },
+      { name: 'Conditional Logic', tiers: { Starter: true, Business: true } },
+      { name: 'Form Limits', tiers: { Starter: true, Business: true } },
+      { name: 'Checklists', tiers: { Starter: true, Business: true } },
+      { name: 'Submissions Per Month', tiers: { Starter: true, Business: true } },
     ],
   },
   {
-    name: 'Reporting',
+    name: 'Mobile Form Users',
     features: [
-      { name: 'Adipiscing.', tiers: { Starter: true, Business: true } },
-      { name: 'Eget risus integer.', tiers: { Starter: true, Business: true } },
-      { name: 'Gravida leo urna velit.', tiers: { Business: true } },
-      { name: 'Elementum ut dapibus mi feugiat cras nisl.', tiers: { Business: true } },
+      { name: 'Salesforce Data Sync.', tiers: { Starter: true, Business: true } },
+      { name: 'Offline Data Capture', tiers: { Starter: true, Business: true } },
+      { name: 'iOS and Android Apps', tiers: { Starter: true, Business: true } },
     ],
   },
   {
-    name: 'Support',
+    name: 'Workflows and Productivity',
     features: [
-      { name: 'Sit dignissim.', tiers: { Starter: true, Business: true } },
-      { name: 'Congue at nibh et.', tiers: { Business: true } },
-      { name: 'Volutpat feugiat mattis.', tiers: { Business: true } },
-      { name: 'Tristique pellentesque ornare diam sapien.', tiers: { Business: true } },
+      { name: 'Checklists', tiers: { Starter: true, Business: true } },
+      { name: 'Connected Objects', tiers: { Starter: true, Business: true } },
+    ],
+  },
+  {
+    name: 'Implementation Services',
+    features: [
+      { name: 'Documentation and Guides', tiers: { Starter: true, Business: true } },
+      { name: 'Email Support', tiers: { Starter: false, Business: true } },
+      { name: 'Telephone Support', tiers: { Starter: false, Business: true } },
     ],
   },
 ]

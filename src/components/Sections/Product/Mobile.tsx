@@ -9,9 +9,9 @@ import {
 const transferFeatures = [
   {
     id: 1,
-    name: 'Offline first functionality',
+    name: 'No Code Form Builder',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'After',
     icon: GlobeAltIcon,
   },
   {
@@ -23,7 +23,7 @@ const transferFeatures = [
   },
   {
     id: 3,
-    name: 'All data on Salesforce',
+    name: 'Salesforce Field mapping',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
     icon: BoltIcon,
@@ -32,21 +32,21 @@ const transferFeatures = [
 const communicationFeatures = [
   {
     id: 1,
-    name: 'No Code Form Builder',
+    name: 'Offline first functionality',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
     icon: ChatBubbleBottomCenterTextIcon,
   },
   {
     id: 2,
-    name: 'Salesforce Native',
+    name: 'Guided forms',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
     icon: EnvelopeIcon,
   },
   {
     id: 3,
-    name: 'Salesforce Field Mapping',
+    name: 'Advanced features',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
     icon: EnvelopeIcon,
@@ -85,7 +85,7 @@ export default function Mobile() {
             User Friendly Salesforce Form Builder
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-center text-xl text-zinc-500">
-            Build forms in minutes right inside Salesforce.
+            Build forms in minutes right inside of Salesforce
           </p>
         </div>
 
@@ -93,9 +93,7 @@ export default function Mobile() {
           <div className="relative">
             <h3 className="text-2xl font-bold tracking-tight text-zinc-900 sm:text-3xl">Eaasy</h3>
             <p className="mt-3 text-lg text-zinc-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
-              officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
-              Totam, velit.
+              Built for Salesforce Users, with no new tools to learn your team will be able to build and test using new forms.
             </p>
 
             <dl className="mt-10 space-y-10">
@@ -170,10 +168,9 @@ export default function Mobile() {
         <div className="relative mt-12 sm:mt-16 lg:mt-24">
           <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:items-center lg:gap-8">
             <div className="lg:col-start-2">
-              <h3 className="text-2xl font-bold tracking-tight text-zinc-900 sm:text-3xl">Build forms in minutes right inside of Salesforce</h3>
+              <h3 className="text-2xl font-bold tracking-tight text-zinc-900 sm:text-3xl">iOS and Android Mobile Form App</h3>
               <p className="mt-3 text-lg text-zinc-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus,
-                cum deleniti sunt in labore nihil quod quibusdam expedita nemo.
+                Clarity Forms was designed specifically for data capture on mobile devices.
               </p>
 
               <dl className="mt-10 space-y-10">

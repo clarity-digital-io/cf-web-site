@@ -2,41 +2,41 @@ import { CheckIcon } from '@heroicons/react/24/outline'
 
 const features = [
   {
-    name: 'Invite team members',
+    name: 'Field Mapping',
     description:
-      'Quam a velit animi fuga ad. Accusamus consectetur nulla perferendis quam. Aperiam error iusto id eos.',
+      'Map response to a new record or update a record.',
   },
   {
-    name: 'Notifications',
-    description: 'Ut excepturi sequi et corrupti. Quidem est non ipsam sunt voluptatem. Velit dicta iusto. Molestiae.',
+    name: 'Connected Objects',
+    description: 'Relate a response automatically to an object.',
   },
   {
-    name: 'List view',
+    name: 'Prefill Fields',
     description:
-      'Quis ratione necessitatibus ullam id animi iure accusamus debitis voluptas. Cumque debitis exercitationem.',
+      'Add value to fields depending on record related.',
   },
   {
-    name: 'Boards',
+    name: 'Conditional Form Logic',
     description:
-      'Quae et accusantium quo molestiae sed sit ut quo. Quidem omnis iure et maiores porro. Eligendi deserunt.',
+      'Show and hide fields conditionally.',
   },
   {
-    name: 'Keyboard shortcuts',
-    description: 'Optio assumenda eos neque. Quaerat temporibus dicta provident. Quia unde quo aut aut molestiae sit..',
+    name: 'Advanced Fields',
+    description: 'Add repeating sections, camera options, and more.',
   },
   {
-    name: 'Reporting',
-    description: 'Excepturi sed quo mollitia voluptatibus. Qui quo ut nihil quo. Dolor at dignissimos ea voluptatem.',
+    name: 'Guided Forms',
+    description: 'Embed images and notes for your form users.',
   },
   {
-    name: 'Calendars',
+    name: 'Repeating Sections',
     description:
-      'Illum nesciunt odio. Dolorem nobis labore eveniet consequatur quas aut delectus molestias. Qui recusandae.',
+      'Capture data',
   },
   {
-    name: 'Mobile app',
+    name: 'Checklists',
     description:
-      'Aut velit est eius dolore repudiandae. Vitae temporibus amet possimus mollitia. Quia molestiae rerum.',
+      'Add multiple forms to a checklist for workflow management.',
   },
 ]
 

@@ -2,28 +2,10 @@ import ClarityFormsLogo from "../Icons/ClarityFormsLogo"
 
 const navigation = {
   solutions: [
-    { name: 'Marketing', href: '#' },
-    { name: 'Analytics', href: '#' },
-    { name: 'Commerce', href: '#' },
-    { name: 'Insights', href: '#' },
-  ],
-  support: [
+    { name: 'Salesforce Native', href: '#' },
+    { name: 'Features', href: '#' },
     { name: 'Pricing', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Status', href: '#' },
-  ],
-  company: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Press', href: '#' },
-    { name: 'Partners', href: '#' },
-  ],
-  legal: [
-    { name: 'Claim', href: '#' },
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
+    { name: 'View on AppExchange', href: '#' },
   ],
   social: [
     {
@@ -55,15 +37,15 @@ export default function Footer() {
   return (
     <footer>
       <div className="bg-white">
-
         <div className="mx-auto max-w-6xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-          <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+          <div className="xl:grid xl:grid-cols-2 xl:gap-8">
+
             <div className="space-y-8 xl:col-span-1">
 
               <ClarityFormsLogo />
 
               <p className="text-base text-zinc-500">
-                Making the world a better place through constructing elegant hierarchies.
+                Easy to use forms builder, with a powerful mobile app that supports your data capture workflow.
               </p>
               <div className="flex space-x-6">
                 {navigation.social.map((item) => (
@@ -88,48 +70,13 @@ export default function Footer() {
                     ))}
                   </ul>
                 </div>
-                <div className="mt-12 md:mt-0">
-                  <h3 className="text-base font-medium text-zinc-900">Support</h3>
-                  <ul role="list" className="mt-4 space-y-4">
-                    {navigation.support.map((item) => (
-                      <li key={item.name}>
-                        <a href={item.href} className="text-base text-zinc-500 hover:text-zinc-900">
-                          {item.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
               </div>
-              <div className="md:grid md:grid-cols-2 md:gap-8">
-                <div>
-                  <h3 className="text-base font-medium text-zinc-900">Company</h3>
-                  <ul role="list" className="mt-4 space-y-4">
-                    {navigation.company.map((item) => (
-                      <li key={item.name}>
-                        <a href={item.href} className="text-base text-zinc-500 hover:text-zinc-900">
-                          {item.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="mt-12 md:mt-0">
-                  <h3 className="text-base font-medium text-zinc-900">Legal</h3>
-                  <ul role="list" className="mt-4 space-y-4">
-                    {navigation.legal.map((item) => (
-                      <li key={item.name}>
-                        <a href={item.href} className="text-base text-zinc-500 hover:text-zinc-900">
-                          {item.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+
             </div>
+
           </div>
         </div>
+
 
       </div>
       <div className="bg-zinc-900 py-6">
